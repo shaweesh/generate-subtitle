@@ -15,7 +15,7 @@ def merge_srt_with_mp4(video_file, srt_file, output_file):
     (
         ffmpeg
         .input(video_file)
-        .output(output_file, vf='subtitles=temp_subtitles.srt:force_style=\'FontName=Tahoma,PrimaryColour=&H0000FFFF,SecondaryColour=&H00000000,OutlineColour=&H00000000,BackColour=&H00000000,BorderStyle=1,Outline=1,Shadow=0,Alignment=2,MarginL=10,MarginR=10,MarginV=10\'')
+        .output(output_file, vf='subtitles=temp_subtitles.srt:force_style=\'FontName=Tahoma,PrimaryColour=&H0000FFFF,SecondaryColour=&H00000000,OutlineColour=&H00000000,BackColour=&H00000000,BorderStyle=1,Outline=1,Shadow=0,Alignment=2,MarginL=10,MarginR=10,MarginV=50\'')
         .run(overwrite_output=True)
     )
 
